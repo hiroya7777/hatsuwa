@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hatsuwa</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+    <title>hatsuwa</title>
+      <%= csrf_meta_tags %>
+      <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
-
+  <header>
+    <div class="container">
+      <div class="header-left">
+        <div class="logo">
+          <%= link_to '吃音コミュニティ',root_path,class: 'logo' %>
+        </div>
+      </div>
+      <span class="fa fa-bars menu-icon"></span>
+       <div class="header-right">
+          <%= link_to '吃音コミュニティとは',root_path %>
+          <%= link_to '新規登録',new_user_path %>
+          <%= link_to 'ログイン',login_path %>
+       </div>
+    </div>
+  </header>
   <body>
+        <% flash.each do |key,value| %>
+          <div class="alert alert-<%= key %>" role="alert"><%= value %></div>
+        <% end %>
+
     <%= yield %>
+
+    <script>
+      $(function(){
+        $(".alert").fadeOut(5000);
+      });
+    </script>
   </body>
 </html>
