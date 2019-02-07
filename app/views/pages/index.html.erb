@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>吃音コミュニティ</title>
+    <title>Agri to C</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -13,14 +13,14 @@
       <div class="container">
         <div class="header-left">
           <div class="logo">
-            <%= link_to '吃音コミュニティ',root_path,class: 'logo' %>
+            <%= link_to 'Agri to C',root_path,class: 'logo' %>
           </div>
         </div>
 
         <span class="fa fa-bars menu-icon"></span>
 
        <div class="header-right">
-         <%= link_to '吃音コミュニティとは',root_path %>
+         <%= link_to 'Agri to Cとは？',root_path %>
          <%= link_to '新規登録',new_user_path %>
          <%= link_to 'ログイン',login_path %>
         </div>
@@ -28,13 +28,11 @@
     </header>
     <div class="top-wrapper">
       <div class="container">
-        <h1>LEARN TO CODE.</h1>
-        <h1>LEARN TO BE CREATIVE.</h1>
-        <p>Progateはオンラインプログラミング学習サービスです。</p>
-        <p>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
+        <h1>『農家と消費者をつなごう』<br>
+        廃棄ゼロへ向けた挑戦！</h1>
         <div class="btn-wrapper">
 
-          <%= link_to '吃音コミュニティとは？',new_user_path, class: 'btn signup'  %>
+          <%= link_to 'Agri to Cとは？',new_user_path, class: 'btn signup'  %>
           <%= link_to '新規登録はこちら',new_user_path, class: 'btn signup'  %>
         </div>
         </div>
@@ -44,55 +42,56 @@
     <div class="lesson-wrapper">
       <div class="container">
         <div class="heading">
-          <h2>Learn Where to Get Started!</h2>
+          <h2>Agri to Cとは？</h2>
         </div>
         <div class="lessons">
           <div class="lesson">
             <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/html.png">
-              <p>HTML & CSS</p>
+              <img src="https://cdn.pixabay.com/photo/2017/01/13/01/22/ok-1976099_960_720.png" height="150" width="150">
+              <h3>ミッション</h3>
             </div>
-            <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
+            <p class="text-contents">「農家と消費者を繋げる」をビジョンに農業を元気にしたいと考えています。</p>
+
           </div>
           <div class="lesson">
             <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-              <p>jQuery</p>
+              <img src="https://cdn.pixabay.com/photo/2017/01/13/01/22/ok-1976099_960_720.png" height="150" width="150">
+              <h3>設立経緯</h3>
             </div>
-            <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
+            <p class="text-contents">農家の方は「儲からない」「もうすぐ辞める」と言う声が多く農業人口は急速に減少しています。
+               根本原因として、年間廃棄が多くせっかく収穫した野菜が消費者に届いていない現状がありました。</p>
           </div>
           <div class="lesson">
             <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/ruby.png">
-              <p>Ruby</p>
+        　　　　<img src="https://cdn.pixabay.com/photo/2017/01/13/01/22/ok-1976099_960_720.png" height="150" width="150">
             </div>
-            <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
+            <h3>農家と消費者を繋ぐ</h3>
+            <p class="text-contents">投稿者は成功体験を投稿し合うことでメンバー同士の自信に繋げることができます。面接が上手くいった、電話応対ができた等々...</p>
           </div>
           <div class="lesson">
             <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/php.png">
-              <p>PHP</p>
+              <img src="https://cdn.pixabay.com/photo/2017/01/13/01/22/ok-1976099_960_720.png" height="150" width="150">
+              <h3>都心エリアのユーザーを取り込む</h3>
             </div>
-            <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
+            <p class="text-contents"></p>
           </div>
+
+
           <div class="clear"></div>
         </div>
       </div>
     </div>
+
     <div class="message-wrapper">
       <div class="container">
         <div class="heading">
-          <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-          <h3>Let's learn to code, learn to be creative!</h3>
+          <h2>あなたもAgri to Cに参加しませんか？</h2>
+          <h3>まずは新規会員登録からお願いします。</h3>
         </div>
-        <span class="btn message">さっそく開発する</span>
+
+        <%= link_to '新規登録はこちら',new_user_path, class: 'btn message'  %>
       </div>
     </div>
-    <footer>
-      <div class="container">
 
-        <p>2019 hiroya kawaguchi</p>
-      </div>
-    </footer>
   </body>
 </html>
